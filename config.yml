@@ -41,7 +41,7 @@ plugins:
           dsn: dbi:Pg:dbname=pearlbee
           schema_class: PearlBee::Model::Schema
           user: pearlbee_user
-          password: password
+          password: G0P3arlB33G0
           options:
             RaiseError: 1
             PrintError: 1
