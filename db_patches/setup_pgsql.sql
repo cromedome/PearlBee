@@ -123,7 +123,7 @@ CREATE TABLE IF NOT EXISTS settings (
 create or replace function bool_add (bigint, boolean)
     returns bigint as
 $body$
-    select $1 + case when true then 1 else 0 end;
+    select $1 + case $2 when true then 1 else 0 end;
 $body$ language sql;
 
 create aggregate sum(boolean) (
