@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /srv/PearlBee
+plackup -s Starman -D -I lib bin/app.pl \
+    --listen :5000 \
+    --access-log logs/access.log

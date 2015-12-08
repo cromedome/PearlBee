@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS users (
     role user_roles NOT NULL DEFAULT 'author',
     activation_key varchar(100) DEFAULT NULL,
     status user_status NOT NULL DEFAULT 'deactivated',
-    salt char(24) NOT NULL,
+    salt char(30) NOT NULL,
     UNIQUE ( username ),
     UNIQUE ( email )
 );
